@@ -43,3 +43,4 @@ var questArray = [
     ]
 
 var scores = [];
+var body = document.body;

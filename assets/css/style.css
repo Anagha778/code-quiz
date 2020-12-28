@@ -45,3 +45,33 @@ box-shadow: 0 3px gray;
 margin-top: 20px;
 cursor: pointer;
 }
+
+.questions{
+    padding: 20px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 380px;
+}
+
+.questions p{
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: bold; 
+    width: 75%;
+}
+
+.btnq{
+    outline: none;
+    border: none;
+    width: 30%;
+    padding: 10px 15px;
+    background: var(--primary-color);
+    font-size: 1.1rem;
+    border-radius: 12px;
+    top: -3px;
+    box-shadow: 0 3px gray;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
