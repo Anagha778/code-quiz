@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color:#1c8591;
+  }
+
+#head{
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between; 
+    padding: 20px 50px;
+}
+
+#head p {
+    color: var(--primary-color);
+    margin: 5px 0 20px;
+    font-size: 1.5rem;   
+    font-weight: bold;   
+}
