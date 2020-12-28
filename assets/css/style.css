@@ -19,3 +19,29 @@
     font-size: 1.5rem;   
     font-weight: bold;   
 }
+
+.main-page{
+    text-align: center;
+    padding: 40px 50px;
+}
+    
+.main-page p{
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: bold;    
+}
+
+.btn{
+outline: none;
+border: none;
+display: inline-block;
+padding: 10px 15px;
+background: var(--primary-color);
+font-size: 1.1rem;
+border-radius: 12px;
+position: relative;
+top: -3px;
+box-shadow: 0 3px gray;
+margin-top: 20px;
+cursor: pointer;
+}
