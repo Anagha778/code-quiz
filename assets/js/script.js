@@ -170,11 +170,6 @@ var loadScores = function(){
 var submitForm = function(event)
 {
     loadScores();
-   /* if (inputEl.value === '')
-    {
-        alert("Please enter initials");
-        event.preventDefault();
-    }*/
     var nameInitial = inputEl.value;
     var scoreFinal = Highscore;
     var storeLocal = nameInitial+" - "+scoreFinal;
@@ -191,7 +186,6 @@ var loadHighscores = function(flag)
     headerEl.parentNode.removeChild(headerEl);
     mainpageEl.parentNode.removeChild(mainpageEl);
     
-    //var loadHighscoresEl = document.createElement("div");
     loadHighscoresEl.className = "load-scores";
 
     loadHighscoresEl.innerHTML = "<h1 class='high'>High Scores</h1>";
