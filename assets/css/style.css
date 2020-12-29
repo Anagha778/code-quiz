@@ -5,7 +5,7 @@
 :root {
     --primary-color:#1c8591;
   }
-
+/*Header style*/
 #head{
     display: flex;
     flex-direction:row ;
@@ -20,6 +20,7 @@
     font-weight: bold;   
 }
 
+/*main page style*/
 .main-page{
     text-align: center;
     padding: 40px 50px;
@@ -31,6 +32,7 @@
     font-weight: bold;    
 }
 
+/*style for button*/
 .btn{
 outline: none;
 border: none;
@@ -46,6 +48,7 @@ margin-top: 20px;
 cursor: pointer;
 }
 
+/*style for questions section*/
 .questions{
     padding: 20px 40px;
     display:flex;
@@ -76,6 +79,7 @@ cursor: pointer;
     text-align: center;
 }
 
+/*style for result section*/
 .border{
     padding: 10px;
     border-top:2px solid rgb(193, 193, 206);
@@ -97,7 +101,6 @@ cursor: pointer;
     width: 75%;
 }
 
-
 .btnq{
     outline: none;
     border: none;
@@ -112,7 +115,8 @@ cursor: pointer;
     cursor: pointer;
     text-align: center;
 }
-    
+
+/*style for submit form*/
 #submit-form{
         padding : 50px 50px;
         margin-left: 380px;
@@ -132,6 +136,7 @@ cursor: pointer;
     padding-left: 15px;
 }
 
+/*style for view score section*/
 .list-item{
     font-size: 20px;
     color: var(--primary-color);
