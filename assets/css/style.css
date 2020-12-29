@@ -91,3 +91,26 @@ cursor: pointer;
     width: 75%;
 }
 
+
+.btnq{
+    outline: none;
+    border: none;
+    width: 30%;
+    padding: 10px 15px;
+    background: var(--primary-color);
+    font-size: 1.1rem;
+    border-radius: 12px;
+    top: -3px;
+    box-shadow: 0 3px gray;
+    margin-top: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+    
+#submit-form{
+        padding : 50px 50px;
+        margin-left: 380px;
+        font-size: 25px;
+        color: var(--primary-color);
+        font-weight: bold; 
+}
