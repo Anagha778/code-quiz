@@ -26,7 +26,9 @@ THEN I can save my initials and score
 ## Mock-Up
 The following animation demonstrates the application functionality:
 
-
+<div>
+    <img src="./assets/images/quiz.gif" width="400px"/> 
+</div>
 
 ## Built With
 * HTML
@@ -34,3 +36,5 @@ The following animation demonstrates the application functionality:
 * JavaScript
 
 ## Website
+
+https://anagha778.github.io/code-quiz/
