@@ -174,6 +174,71 @@ var submitForm = function(event)
     localStorage.setItem("scores",JSON.stringify(scores));
 };
 
+var loadHighscores = function(flag)
+{       
+   var getScores = localStorage.getItem("scores");
+   if (flag===true)
+   {
+
+    headerEl.parentNode.removeChild(headerEl);
+    mainpageEl.parentNode.removeChild(mainpageEl);
+    
+    //var loadHighscoresEl = document.createElement("div");
+    loadHighscoresEl.className = "load-scores";
+
+    loadHighscoresEl.innerHTML = "<h1 class='high'>High Scores</h1>";
+
+    olistItemEl = document.createElement("ol");
+    olistItemEl.setAttribute("id","ollist");
+    loadHighscoresEl.appendChild(olistItemEl);
+    
+    if (getScores!== null)
+    {
+        
+        getScores = JSON.parse(getScores);
+        for(var i=0;i<getScores.length;i++)
+        {
+            var listItemEl = document.createElement("li");
+            listItemEl.className = "list-item";
+            listItemEl.id = "listitems";
+            listItemEl.innerText = getScores[i];
+            olistItemEl.appendChild(listItemEl);
+        }
+    }
+            // create Go Back button
+        gobackButtonEl.textContent = "Go Back";
+        gobackButtonEl.className = "btn hscores-btn";       
+        
+        clearButtonEl.textContent = "Clear high scores";
+        clearButtonEl.className = "btn hscores-btn";
+
+        if(getScores===null)
+        {
+            clearButtonEl.disabled=true;
+        }
+        else
+        {
+            clearButtonEl.disabled=false;
+        }
+                
+        loadHighscoresEl.appendChild(gobackButtonEl);
+        loadHighscoresEl.appendChild(clearButtonEl);
+        body.appendChild(loadHighscoresEl);
+}
+else if((getScores === null) && flag === false)
+    {
+        while(olistItemEl.hasChildNodes())
+        {
+            olistItemEl.removeChild(olistItemEl.firstChild);
+        }
+    }
+ 
+};
+
+var viewhscores = function(event)
+{ 
+    loadHighscores(true);    
+};
 
 
 
@@ -189,3 +254,4 @@ option3El.addEventListener("click",buttonclick);
 option4El.addEventListener("click",buttonclick);
 subFormEl.addEventListener("keyup",inputText);
 subFormEl.addEventListener("submit",submitForm);
+viewscoreEl.addEventListener("click",viewhscores);
