@@ -145,6 +145,35 @@ var inputText = function(event){
     resultEl.parentNode.removeChild(resultEl); 
 };
 
+var loadScores = function(){
+    var getScores = localStorage.getItem("scores");
+    
+    if (getScores!== null)
+    {
+        getScores = JSON.parse(getScores);
+        for(var i=0;i<getScores.length;i++)
+        {
+            scores[i]=getScores[i];
+        }
+    }
+
+};
+
+var submitForm = function(event)
+{
+    loadScores();
+   /* if (inputEl.value === '')
+    {
+        alert("Please enter initials");
+        event.preventDefault();
+    }*/
+    var nameInitial = inputEl.value;
+    var scoreFinal = Highscore;
+    var storeLocal = nameInitial+" - "+scoreFinal;
+    scores.push(storeLocal);
+    localStorage.setItem("scores",JSON.stringify(scores));
+};
+
 
 
 
@@ -159,3 +188,4 @@ option2El.addEventListener("click",buttonclick);
 option3El.addEventListener("click",buttonclick);
 option4El.addEventListener("click",buttonclick);
 subFormEl.addEventListener("keyup",inputText);
+subFormEl.addEventListener("submit",submitForm);
