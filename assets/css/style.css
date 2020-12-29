@@ -76,6 +76,12 @@ cursor: pointer;
     text-align: center;
 }
 
+.border{
+    padding: 10px;
+    border-top:2px solid rgb(193, 193, 206);
+    width: 70%;
+}
+
 .result{
     padding: 20px 40px;
     display:flex;

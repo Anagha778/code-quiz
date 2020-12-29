@@ -141,6 +141,9 @@ var startQuiz = function(event)
     body.appendChild(resultEl);  
 };
 
+var inputText = function(event){
+    resultEl.parentNode.removeChild(resultEl); 
+};
 
 
 
@@ -155,3 +158,4 @@ option1El.addEventListener("click",buttonclick);
 option2El.addEventListener("click",buttonclick);
 option3El.addEventListener("click",buttonclick);
 option4El.addEventListener("click",buttonclick);
+subFormEl.addEventListener("keyup",inputText);
