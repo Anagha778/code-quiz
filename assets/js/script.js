@@ -41,8 +41,9 @@ var questArray = [
         "correct" : "4. Console.log"
     }
     ]
-
+//define scores empty array 
 var scores = [];
+//identify all the elements in application
 var body = document.body;
 var mainpageEl = document.getElementById("main-page")
 var startquizEl = document.getElementById("start-quiz");
@@ -65,11 +66,14 @@ var clearButtonEl = document.createElement("button");
 var olistItemEl;
 var clearButtonEl;
 var correctAns="";
+//counter to keep track of questions
 var cnt = 0;
+//counter to keep track of time 
 var d = 75;
 var myVar="";
 var Highscore = 0;
 
+//function to keep track of time
 var myTimer = function() 
   { 
     d=d-1;
@@ -80,6 +84,7 @@ var myTimer = function()
     } 
 };
 
+//function to show results once questions over
 var showResult = function()
 {
     clearInterval(myVar);
@@ -95,6 +100,7 @@ var showResult = function()
     document.getElementById("fscore").textContent = d;
 };
 
+//capture event when answers selected
 var buttonclick = function(event)
 {   
     var Seletedans = document.getElementById(this.id).innerText; 
@@ -129,6 +135,7 @@ var buttonclick = function(event)
     }    
 };
 
+//load questions 
 var loadQuestions = function()
 {
     questionEl.textContent = questArray[cnt].questionText;
@@ -139,6 +146,7 @@ var loadQuestions = function()
     correctAns = questArray[cnt].correct;  
 };
 
+//Start quiz btton clicked
 var startQuiz = function(event)
 {
     document.getElementById("timer").innerHTML = 75;
@@ -149,10 +157,12 @@ var startQuiz = function(event)
     body.appendChild(resultEl);  
 };
 
+//remove the results section on keyup event
 var inputText = function(event){
     resultEl.parentNode.removeChild(resultEl); 
 };
 
+//load scores from local storage
 var loadScores = function(){
     var getScores = localStorage.getItem("scores");
     
@@ -167,6 +177,7 @@ var loadScores = function(){
 
 };
 
+//submit form event with scores and initial
 var submitForm = function(event)
 {
     loadScores();
@@ -177,6 +188,7 @@ var submitForm = function(event)
     localStorage.setItem("scores",JSON.stringify(scores));
 };
 
+//view high scores
 var loadHighscores = function(flag)
 {       
    var getScores = localStorage.getItem("scores");
@@ -194,6 +206,7 @@ var loadHighscores = function(flag)
     olistItemEl.setAttribute("id","ollist");
     loadHighscoresEl.appendChild(olistItemEl);
     
+    //create a li element and show scores from local storage
     if (getScores!== null)
     {
         
@@ -211,6 +224,7 @@ var loadHighscores = function(flag)
         gobackButtonEl.textContent = "Go Back";
         gobackButtonEl.className = "btn hscores-btn";       
         
+            //create clear high scores button
         clearButtonEl.textContent = "Clear high scores";
         clearButtonEl.className = "btn hscores-btn";
 
@@ -242,12 +256,14 @@ var viewhscores = function(event)
     loadHighscores(true);    
 };
 
+//go back button cliked
 var goback = function(event){
     body.removeChild(loadHighscoresEl);
     body.appendChild(headerEl);
     body.appendChild(mainpageEl);
 };
 
+//clear high scores button clicked
 var clearHighsores = function(event){
 
     localStorage.clear();
@@ -257,7 +273,7 @@ var clearHighsores = function(event){
     loadHighscores(false);
 };
 
-
+//event handlers
 questionsEl.parentNode.removeChild(questionsEl);
 resultEl.parentNode.removeChild(resultEl);
 subFormEl.parentNode.removeChild(subFormEl);
