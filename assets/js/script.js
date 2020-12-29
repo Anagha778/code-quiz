@@ -53,6 +53,24 @@ var option1El = document.getElementById("option1");
 var option2El = document.getElementById("option2");
 var option3El = document.getElementById("option3");
 var option4El = document.getElementById("option4");
+var resultEl = document.getElementById("result");
+var verifyEl =  document.getElementById("verify");
+var subFormEl = document.getElementById("submit-form");
+var correctAns="";
+var cnt = 0;
+var d = 75;
+var myVar="";
+var Highscore = 0;
+
+var myTimer = function() 
+  { 
+    d=d-1;
+    document.getElementById("timer").innerHTML = d;  
+    if (d<0 || d===0)
+    {
+        clearInterval(myVar);
+    } 
+};
 
 var loadQuestions = function()
 {
@@ -64,7 +82,7 @@ var loadQuestions = function()
     correctAns = questArray[cnt].correct;  
 };
 
-var startQuiz = function()
+var startQuiz = function(event)
 {
     document.getElementById("timer").innerHTML = 75;
     myVar = setInterval(myTimer, 1000);
