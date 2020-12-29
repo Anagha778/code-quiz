@@ -254,6 +254,14 @@ var goback = function(event){
     body.appendChild(mainpageEl);
 };
 
+var clearHighsores = function(event){
+
+    localStorage.clear();
+    scores.splice(0,scores.length);
+    alert("cleared high scores");
+    clearButtonEl.disabled=true;
+    loadHighscores(false);
+};
 
 
 questionsEl.parentNode.removeChild(questionsEl);
@@ -267,3 +275,5 @@ option4El.addEventListener("click",buttonclick);
 subFormEl.addEventListener("keyup",inputText);
 subFormEl.addEventListener("submit",submitForm);
 viewscoreEl.addEventListener("click",viewhscores);
+gobackButtonEl.addEventListener("click",goback);
+clearButtonEl.addEventListener("click",clearHighsores);
