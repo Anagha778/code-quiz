@@ -44,3 +44,15 @@ var questArray = [
 
 var scores = [];
 var body = document.body;
+
+
+
+
+
+
+
+
+
+
+questionsEl.parentNode.removeChild(questionsEl);
+resultEl.parentNode.removeChild(resultEl);

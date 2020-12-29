@@ -75,3 +75,19 @@ cursor: pointer;
     cursor: pointer;
     text-align: center;
 }
+
+.result{
+    padding: 20px 40px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 380px;
+}
+
+#result p{
+    font-size: 25px;
+    color: rgb(193, 193, 206);
+    font-weight: bold; 
+    width: 75%;
+}
+
