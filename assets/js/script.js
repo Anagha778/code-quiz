@@ -56,6 +56,14 @@ var option4El = document.getElementById("option4");
 var resultEl = document.getElementById("result");
 var verifyEl =  document.getElementById("verify");
 var subFormEl = document.getElementById("submit-form");
+var inputEl = document.getElementById("initial");
+var viewscoreEl = document.getElementById("viewscore");
+var headerEl = document.getElementById("head");
+var loadHighscoresEl = document.createElement("div");
+var gobackButtonEl = document.createElement("button");
+var clearButtonEl = document.createElement("button");
+var olistItemEl;
+var clearButtonEl;
 var correctAns="";
 var cnt = 0;
 var d = 75;
@@ -240,7 +248,11 @@ var viewhscores = function(event)
     loadHighscores(true);    
 };
 
-
+var goback = function(event){
+    body.removeChild(loadHighscoresEl);
+    body.appendChild(headerEl);
+    body.appendChild(mainpageEl);
+};
 
 
 
