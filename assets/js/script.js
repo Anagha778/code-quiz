@@ -72,6 +72,55 @@ var myTimer = function()
     } 
 };
 
+var showResult = function()
+{
+    clearInterval(myVar);
+    Highscore = d;
+    if (d<0){ 
+    document.getElementById("timer").innerHTML = 0;}
+    else{
+    document.getElementById("timer").innerHTML = d;}
+    localStorage.setItem("hScore",Highscore);
+    questionsEl.parentNode.removeChild(questionsEl);
+    body.appendChild(subFormEl);
+    body.appendChild(resultEl);
+    document.getElementById("fscore").textContent = d;
+};
+
+var buttonclick = function(event)
+{   
+    var Seletedans = document.getElementById(this.id).innerText; 
+    if(cnt < questArray.length && d>0)
+    {
+        if (Seletedans === correctAns)
+        {
+            verifyEl.innerText = "Correct!" ;
+        }
+        else
+        {   d=d-10;
+            verifyEl.innerText = "Wrong!";            
+        }  
+    
+        cnt = cnt+1; 
+        if ((cnt === questArray.length && d>0) || (d<0))
+        {
+            showResult();       
+        }
+        else
+        {
+        loadQuestions();  
+        } 
+    }  
+    else if((cnt < questArray.length && d===0) || (cnt < questArray.length && d<0))
+    {
+        showResult();
+    } 
+    else if(cnt === questArray.length-1 && d<0)
+    {
+        showResult();
+    }    
+};
+
 var loadQuestions = function()
 {
     questionEl.textContent = questArray[cnt].questionText;
@@ -102,3 +151,7 @@ questionsEl.parentNode.removeChild(questionsEl);
 resultEl.parentNode.removeChild(resultEl);
 subFormEl.parentNode.removeChild(subFormEl);
 startquizEl.addEventListener("click",startQuiz);
+option1El.addEventListener("click",buttonclick);
+option2El.addEventListener("click",buttonclick);
+option3El.addEventListener("click",buttonclick);
+option4El.addEventListener("click",buttonclick);
