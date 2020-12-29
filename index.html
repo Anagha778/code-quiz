@@ -6,8 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Timed quiz</title>
+  <!--Link style sheet-->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+<!--header-->
 <header>
     <div id="head">
         <p id ="viewscore">View high scores</p>
@@ -15,6 +17,7 @@
     </div>
 </header>
 <body>
+    <!--Main page-->
     <div class="main-page" id = "main-page">
         <h1>Coding Quiz Challenge</h1>
         <p>Try to answer the following code-related questions within time limit.</br>Keep in mind that
@@ -22,6 +25,7 @@
         </p>
         <button class ="btn" id ="start-quiz">Start Quiz</button>
     </div>
+    <!--Questions section-->
     <div class="questions" id = "questions">
         <p class="question" id ="question"></p>
         <button class="btnq" id = "option1">option1</button>
@@ -29,9 +33,11 @@
         <button class="btnq" id = "option3">option3</button>
         <button class="btnq" id = "option4">option4</button>
     </div>
+    <!--Result section-->
     <div class ="result" id = "result">
         <p class ="border"><span id="verify"></span></p>
     </div>
+    <!--Submit form-->
     <form id ="submit-form">
         <div class="form-group">
             <h2 id = "done">All done!</h2>
@@ -45,7 +51,7 @@
             <button class ="btn" id ="subform">Submit</button>
         </div>
     </form>
-
+    <!--Link to script file-->
     <script src="./assets/js/script.js"></script>
 </body>
 
