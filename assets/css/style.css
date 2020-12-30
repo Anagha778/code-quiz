@@ -67,7 +67,7 @@ cursor: pointer;
 .btnq{
     outline: none;
     border: none;
-    width: 30%;
+    width: 25%;
     padding: 10px 15px;
     background: var(--primary-color);
     font-size: 1.1rem;
@@ -76,7 +76,7 @@ cursor: pointer;
     box-shadow: 0 3px gray;
     margin-top: 20px;
     cursor: pointer;
-    text-align: center;
+    text-align: left;
 }
 
 /*style for result section*/
