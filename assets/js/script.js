@@ -88,16 +88,21 @@ var myTimer = function()
 var showResult = function()
 {
     clearInterval(myVar);
-    Highscore = d;
-    if (d<0){ 
-    document.getElementById("timer").innerHTML = 0;}
+    
+    if (d<0)
+    { 
+    document.getElementById("timer").innerHTML = 0;
+    Highscore = 0;    
+    }
     else{
-    document.getElementById("timer").innerHTML = d;}
+    document.getElementById("timer").innerHTML = d;
+    Highscore = d;
+    }
     localStorage.setItem("hScore",Highscore);
     questionsEl.parentNode.removeChild(questionsEl);
     body.appendChild(subFormEl);
     body.appendChild(resultEl);
-    document.getElementById("fscore").textContent = d;
+    document.getElementById("fscore").textContent = Highscore;
 };
 
 //capture event when answers selected
