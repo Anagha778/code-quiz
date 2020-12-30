@@ -252,7 +252,39 @@ else if((getScores === null) && flag === false)
 };
 
 var viewhscores = function(event)
-{ 
+{   
+    if(document.body.contains(questionsEl))
+    {
+        correctAns="";
+        cnt = 0;
+        clearInterval(myVar);
+        myVar="";
+        Highscore = 0;
+        d=75;
+        document.getElementById("timer").innerHTML = 0;
+        questionsEl.parentNode.removeChild(questionsEl);
+    }
+    else if(document.body.contains(subFormEl))
+    {
+        correctAns="";
+        cnt = 0;
+        clearInterval(myVar);
+        myVar="";
+        Highscore = 0;
+        d=75;
+        document.getElementById("timer").innerHTML = 0;
+        subFormEl.parentNode.removeChild(subFormEl);
+    }
+    else if(document.body.contains(mainpageEl))
+    {
+        mainpageEl.parentNode.removeChild(mainpageEl);
+    }
+    if(document.body.contains(resultEl))
+    {
+        verifyEl.innerText = "";
+        resultEl.parentNode.removeChild(resultEl);
+    }
+    headerEl.parentNode.removeChild(headerEl); 
     loadHighscores(true);    
 };
 
