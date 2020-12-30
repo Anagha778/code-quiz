@@ -4,7 +4,7 @@
 Purpose is to build a timed coding quiz with multiple-choice questions. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface.
 
 ## Description:
-On click of "Start Quiz" button User can starts with timed quiz. User will be redirected to the multiple choice questions.Time will start as soon as user clicks on "Start Quiz" button.User can select answer by clicking on corresponding button and can see the result (correct or wrong). When question is answered incorrectly then time is subtracted from the clock (10secs).
+On click of "Start Quiz" button User can start with timed quiz. User will be redirected to multiple choice questions.Time will start as soon as user clicks on "Start Quiz" button.User can select answer by clicking on correct option button and can see the result (correct or wrong). When question is answered incorrectly then time is subtracted from the clock (10secs).
 When all the questions are answered or timer reaches to zero then the game is over.While last couple of seconds remaining,if user answers question with wrong answer, then the final score will be zero. 
 When the game is over, user can save initials and score.
 On click of view high score link user will be shown list of all the high scores. On click of clear high scores, all the saved scores will be removed.
