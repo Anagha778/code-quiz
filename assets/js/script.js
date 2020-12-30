@@ -180,12 +180,34 @@ var loadScores = function(){
 //submit form event with scores and initial
 var submitForm = function(event)
 {
+    event.preventDefault();
     loadScores();
     var nameInitial = inputEl.value;
     var scoreFinal = Highscore;
     var storeLocal = nameInitial+" - "+scoreFinal;
     scores.push(storeLocal);
     localStorage.setItem("scores",JSON.stringify(scores));
+    if(document.body.contains(subFormEl))
+    {
+    
+    subFormEl.parentNode.removeChild(subFormEl);
+    }
+    if(document.body.contains(headerEl))
+    {
+    document.getElementById("timer").innerHTML = 0;
+    headerEl.parentNode.removeChild(headerEl);
+    }
+    if(document.body.contains(resultEl))
+    {
+        verifyEl.innerText = "";
+        resultEl.parentNode.removeChild(resultEl);
+    }
+    cnt = 0;
+    clearInterval(myVar);
+    myVar="";
+    Highscore = 0;
+    d=75;
+    loadHighscores(true);
 };
 
 //view high scores
