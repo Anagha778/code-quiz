@@ -159,7 +159,11 @@ var startQuiz = function(event)
 
 //remove the results section on keyup event
 var inputText = function(event){
-    resultEl.parentNode.removeChild(resultEl); 
+    verifyEl.innerText = "";
+    if(document.body.contains(resultEl))
+    {
+        resultEl.parentNode.removeChild(resultEl); 
+    }  
 };
 
 //load scores from local storage
