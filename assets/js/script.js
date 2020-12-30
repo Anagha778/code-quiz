@@ -193,11 +193,7 @@ var loadHighscores = function(flag)
 {       
    var getScores = localStorage.getItem("scores");
    if (flag===true)
-   {
-
-    headerEl.parentNode.removeChild(headerEl);
-    mainpageEl.parentNode.removeChild(mainpageEl);
-    
+   {  
     loadHighscoresEl.className = "load-scores";
 
     loadHighscoresEl.innerHTML = "<h1 class='high'>High Scores</h1>";
@@ -250,7 +246,7 @@ else if((getScores === null) && flag === false)
     }
  
 };
-
+//On click of View High score link
 var viewhscores = function(event)
 {   
     if(document.body.contains(questionsEl))
