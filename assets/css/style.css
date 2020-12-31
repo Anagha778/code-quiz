@@ -67,7 +67,7 @@ cursor: pointer;
 .btnq{
     outline: none;
     border: none;
-    width: 25%;
+    width: 23%;
     padding: 10px 15px;
     background: var(--primary-color);
     font-size: 1.1rem;
