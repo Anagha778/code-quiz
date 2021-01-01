@@ -3,8 +3,8 @@
 }
 
 :root {
-    --primary-color:rgb(61, 61, 138);
-    --secondary-color:rgb(141, 91, 141);
+    --primary-color:rgb(47, 47, 141);
+    --secondary-color:rgb(212, 126, 212);
   }
 /*Header style*/
 #head{
@@ -134,8 +134,8 @@ color: beige;
 
 
 .load-scores{
-    padding: 100px 50px;
-    margin-left: 400px;
+    padding: 100px 55px;
+    margin-left: 380px;
 }
 
 .high{
@@ -144,8 +144,13 @@ color: beige;
 
 /*style for view score section*/
 .list-item{
-    font-size: 20px;
-    width: 40%;
+    font-size: 18px;
+    width: 45%;
+}
+
+#listitems{
+    background-color:  rgb(234, 234, 240);
+    margin-bottom: 3px;
 }
 
 .hscores-btn{
