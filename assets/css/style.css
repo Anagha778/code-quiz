@@ -57,7 +57,7 @@ color: beige;
 
 /*style for questions section*/
 .questions{
-    padding: 10px 40px;
+    
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,7 +65,7 @@ color: beige;
 }
 
 .questions p{
-    font-size: 25px;
+    font-size: 30px;
     color: var(--primary-color);
     font-weight: bold; 
     width: 75%;
@@ -82,7 +82,6 @@ color: beige;
     border-radius: 12px;
     top: -3px;
     box-shadow: 0 3px gray;
-    margin-top: 5px;
     cursor: pointer;
     text-align: left;
     color: beige;
@@ -100,7 +99,6 @@ color: beige;
 }
 
 .result{
-    padding: 10px 40px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -130,7 +128,6 @@ color: beige;
 
 /*style for submit form*/
 #submit-form{
-        padding : 50px 50px;
         margin-left: 380px;
         font-size: 25px;
         font-weight: bold; 
