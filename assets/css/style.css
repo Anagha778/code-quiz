@@ -3,7 +3,9 @@
 }
 
 :root {
-    --primary-color:#1c8591;
+    /*--primary-color:#1c8591;*/
+    --primary-color:rgb(61, 61, 138);
+    --secondary-color:rgb(141, 91, 141);
   }
 /*Header style*/
 #head{
@@ -14,7 +16,7 @@
 }
 
 #head p {
-    color: var(--primary-color);
+    color: var(--secondary-color);
     margin: 5px 0 20px;
     font-size: 1.5rem;   
     font-weight: bold;   
@@ -46,11 +48,16 @@ top: -3px;
 box-shadow: 0 3px gray;
 margin-top: 20px;
 cursor: pointer;
+color: beige;
+}
+
+.btn:hover{
+    background-color: var(--secondary-color) ;
 }
 
 /*style for questions section*/
 .questions{
-    padding: 20px 40px;
+    padding: 10px 40px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -62,6 +69,7 @@ cursor: pointer;
     color: var(--primary-color);
     font-weight: bold; 
     width: 75%;
+    color: black;
 }
 
 .btnq{
@@ -74,20 +82,25 @@ cursor: pointer;
     border-radius: 12px;
     top: -3px;
     box-shadow: 0 3px gray;
-    margin-top: 20px;
+    margin-top: 5px;
     cursor: pointer;
     text-align: left;
+    color: beige;
+}
+
+.btnq:hover{
+    background-color: var(--secondary-color) ;
 }
 
 /*style for result section*/
 .border{
     padding: 10px;
-    border-top:2px solid rgb(193, 193, 206);
+    border-top:2px solid rgb(171, 171, 206);
     width: 70%;
 }
 
 .result{
-    padding: 20px 40px;
+    padding: 10px 40px;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,9 +108,8 @@ cursor: pointer;
 }
 
 #result p{
-    font-size: 25px;
-    color: rgb(193, 193, 206);
-    font-weight: bold; 
+    font-size: 30px;
+    color: rgb(171, 171, 206); 
     width: 75%;
 }
 
@@ -121,7 +133,6 @@ cursor: pointer;
         padding : 50px 50px;
         margin-left: 380px;
         font-size: 25px;
-        color: var(--primary-color);
         font-weight: bold; 
 }
 
@@ -129,7 +140,6 @@ cursor: pointer;
 .load-scores{
     padding: 100px 50px;
     margin-left: 400px;
-    color: var(--primary-color);
 }
 
 .high{
@@ -139,7 +149,6 @@ cursor: pointer;
 /*style for view score section*/
 .list-item{
     font-size: 20px;
-    color: var(--primary-color);
     width: 40%;
 }
 
