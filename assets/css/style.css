@@ -67,7 +67,7 @@ color: beige;
     font-size: 30px;
     color: var(--primary-color);
     font-weight: bold; 
-    width: 75%;
+    width: 65%;
     color: black;
 }
 
@@ -107,7 +107,7 @@ color: beige;
 #result p{
     font-size: 30px;
     color: rgb(171, 171, 206); 
-    width: 75%;
+    width: 65%;
 }
 
 .btnq{

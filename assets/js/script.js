@@ -1,7 +1,7 @@
 //defines questions array
 var questArray = [
     {
-        "questionText": "Commonly used data types do not include:",
+        "questionText": "Commonly used data types that do not include:_____________",
         "opt1" : "1. Strings",
         "opt2" : "2. Booleans",
         "opt3" : "3. Alerts",
@@ -9,7 +9,7 @@ var questArray = [
         "correct" : "3. Alerts"
     },
     {
-        "questionText": "The condition in an if / else statement is enclosed with _____",
+        "questionText": "The condition in an if / else statement is enclosed with __________",
         "opt1" : "1. Quotes",
         "opt2" : "2. Curly brackets",
         "opt3" : "3. Paranthesis",
@@ -17,7 +17,7 @@ var questArray = [
         "correct" : "3. Paranthesis"
     },
     {
-        "questionText": "Arrays in Javascript can be used to store _____",
+        "questionText": "Arrays in Javascript can be used to store _________",
         "opt1" : "1. Numbers and Strings",
         "opt2" : "2. Other arrays",
         "opt3" : "3. Booleans",
@@ -33,7 +33,7 @@ var questArray = [
         "correct" : "3. Quotes"
     },
     {
-        "questionText": "A very useful tool used during development and debugging for printing content to the debugger is:",
+        "questionText": "A useful tool used during development & debugging for printing content to the debugger is",
         "opt1" : "1. Javascript",
         "opt2" : "2. Terminal/bash",
         "opt3" : "3. For loops",
