@@ -38,7 +38,7 @@
 outline: none;
 border: none;
 display: inline-block;
-padding: 10px 15px;
+padding: 10px 10px;
 background: var(--primary-color);
 font-size: 1.1rem;
 border-radius: 12px;
@@ -60,14 +60,14 @@ color: beige;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 380px;
+    margin-left: 340px;
 }
 
 .questions p{
     font-size: 30px;
     color: var(--primary-color);
     font-weight: bold; 
-    width: 68%;
+    width: 70%;
     color: black;
 }
 
@@ -94,20 +94,20 @@ color: beige;
 .border{
     padding: 10px;
     border-top:2px solid rgb(171, 171, 206);
-    width: 68%;
+    width: 70%;
 }
 
 .result{
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 380px;
+    margin-left: 340px;
 }
 
 #result p{
     font-size: 30px;
     color: rgb(171, 171, 206); 
-    width: 68%;
+    width: 70%;
 }
 
 .btnq{
@@ -127,7 +127,7 @@ color: beige;
 
 /*style for submit form*/
 #submit-form{
-        margin-left: 380px;
+        margin-left: 340px;
         font-size: 25px;
         font-weight: bold; 
 }
@@ -140,7 +140,7 @@ color: beige;
 
 .load-scores{
     padding: 100px 55px;
-    margin-left: 380px;
+    margin-left: 340px;
 }
 
 .high{
@@ -164,7 +164,7 @@ color: beige;
 }
 
 .hscores-clbtn{
-    width : 20%;
+    width : 25%;
     margin :5px 16px;
 }
 

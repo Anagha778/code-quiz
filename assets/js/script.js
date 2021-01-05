@@ -17,7 +17,7 @@ var questArray = [
         "correct" : "3. Paranthesis"
     },
     {
-        "questionText": "Arrays in Javascript can be used to store _________",
+        "questionText": "Arrays in Javascript can be used to store _____________",
         "opt1" : "1. Numbers and Strings",
         "opt2" : "2. Other arrays",
         "opt3" : "3. Booleans",
