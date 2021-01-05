@@ -109,7 +109,7 @@ var showResult = function()
 var buttonclick = function(event)
 {   
     var Seletedans = document.getElementById(this.id).innerText; 
-    if(cnt < questArray.length && d>0)
+    if((cnt < questArray.length && d>0) ||(cnt < questArray.length && d===0))
     {
         if (Seletedans === correctAns)
         {
@@ -121,7 +121,7 @@ var buttonclick = function(event)
         }  
     
         cnt = cnt+1; 
-        if ((cnt === questArray.length && d>0) || (d<0))
+        if ((cnt === questArray.length && d>0) || (d<0) || (cnt === questArray.length && d===0))
         {
             showResult();       
         }
@@ -130,7 +130,7 @@ var buttonclick = function(event)
         loadQuestions();  
         } 
     }  
-    else if((cnt < questArray.length && d===0) || (cnt < questArray.length && d<0))
+    else if((cnt < questArray.length && d<0))
     {
         showResult();
     } 
@@ -151,7 +151,7 @@ var loadQuestions = function()
     correctAns = questArray[cnt].correct;  
 };
 
-//Start quiz btton clicked
+//Start quiz button clicked
 var startQuiz = function(event)
 {
     document.getElementById("timer").innerHTML = 75;
