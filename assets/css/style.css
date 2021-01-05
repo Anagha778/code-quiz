@@ -67,7 +67,7 @@ color: beige;
     font-size: 30px;
     color: var(--primary-color);
     font-weight: bold; 
-    width: 65%;
+    width: 68%;
     color: black;
 }
 
@@ -94,7 +94,7 @@ color: beige;
 .border{
     padding: 10px;
     border-top:2px solid rgb(171, 171, 206);
-    width: 65%;
+    width: 68%;
 }
 
 .result{
@@ -107,7 +107,7 @@ color: beige;
 #result p{
     font-size: 30px;
     color: rgb(171, 171, 206); 
-    width: 65%;
+    width: 68%;
 }
 
 .btnq{
@@ -158,9 +158,14 @@ color: beige;
     margin-bottom: 4px;
 }
 
-.hscores-btn{
+.hscores-gobtn{
+    width : 15%;
+    margin :5px 22px;
+}
+
+.hscores-clbtn{
     width : 20%;
-    margin :10px 22px;
+    margin :5px 16px;
 }
 
 #viewscore{

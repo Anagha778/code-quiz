@@ -249,11 +249,11 @@ var loadHighscores = function(flag)
     }
             // create Go Back button
         gobackButtonEl.textContent = "Go Back";
-        gobackButtonEl.className = "btn hscores-btn";       
+        gobackButtonEl.className = "btn hscores-gobtn";       
         
             //create clear high scores button
         clearButtonEl.textContent = "Clear high scores";
-        clearButtonEl.className = "btn hscores-btn";
+        clearButtonEl.className = "btn hscores-clbtn";
 
         if(getScores===null)
         {
