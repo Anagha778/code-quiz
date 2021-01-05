@@ -132,6 +132,11 @@ color: beige;
         font-weight: bold; 
 }
 
+#initial{
+    border: 1.5px solid var(--primary-color);
+    padding: 7px 15px;
+}
+
 
 .load-scores{
     padding: 100px 55px;
